@@ -451,6 +451,7 @@ function toggleHadirBersama() {
 toggleHadirBersama();
 
 
-
+// Run whenever dropdown changes
+jumlahKehadiran.addEventListener("change", toggleHadirBersama);
 
 

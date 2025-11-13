@@ -620,14 +620,12 @@ h2 {
   font-style: italic;
   line-height: 1.4;
   margin-bottom: 7px; /* space between wish and name */
-  font-size: smaller;
 }
 
 /* Name / signature */
 .ucapan-nama {
   font-weight: 400;
   color: #384731;
-  font-size: smaller;
 }
 
 /* Hover effect (optional) */
@@ -1222,6 +1220,8 @@ h2 {
   box-sizing: border-box;
   margin-bottom: 10px;
   height: 120px;
+    font-family: 'Fahkwang', sans-serif; /* Set font to Fahkwang for textareas */
+
 }
 
 #rsvpFormtidak textarea {
@@ -1232,6 +1232,43 @@ h2 {
   box-sizing: border-box;
   margin-bottom: 10px;
   height: 100px;
+}
+
+/* Style for the options in the dropdown */
+/* Style for the select dropdown */
+#jumlahKehadiran {
+  font-family: 'Fahkwang', sans-serif; /* Apply Fahkwang font */
+  font-size: 14px;  /* Increased font size for the dropdown itself */
+  padding: 10px 14px; /* Slightly larger padding for better clickability */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  height: 50px;  /* Increase height to match larger font size */
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath fill='%2345556b' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 5px;
+}
+
+/* Style for the options within the select dropdown */
+#jumlahKehadiran option {
+  font-family: 'Fahkwang', sans-serif;  /* Apply Fahkwang font */
+  font-size: 20px;  /* Increased font size for options */
+  color: #434634;
+  padding: 10px 14px;  /* Padding for spacing inside options */
+  background-color: #fff;  /* Ensure the background is white for clarity */
+}
+
+/* Optional: Adjust individual options' font sizes or style if needed */
+#jumlahKehadiran option[value=""] {
+  color: #888;  /* Lighter color for the default 'Sila Pilih' */
+  font-style: italic;  /* Italicize the placeholder */
 }
 
 /* === Form Buttons === */
