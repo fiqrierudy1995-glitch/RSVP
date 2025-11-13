@@ -637,6 +637,28 @@ h2 {
   transition: transform 0.2s, background-color 0.2s;
 }
 
+/* New Section Below UCAPAN */
+.new-section {
+  background-color: #e0f7fa; /* Light cyan background */
+  padding: 20px;
+  margin: 0 20px 20px 20px; /* Add margin to keep space from other sections */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0; /* Keeps it in place, no pushing */
+}
+
+.new-section p {
+  font-size: 18px;
+  color: #00796b; /* Dark cyan text */
+  font-weight: normal;
+}
+
+/* Make sure the text inside new section is readable */
+.new-section p {
+  line-height: 1.6;
+}
+
 /* ===========================
    🌸 Bottom Navigation
 =========================== */
@@ -734,7 +756,7 @@ h2 {
   border-radius: 19px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   border-color: #434634;
   width: 90%;
   max-width: 368px;
@@ -812,17 +834,17 @@ h2 {
 
 /* Android Button */
 #androidBtn {
-  border: 1px solid #45556b;
+  border: 1px solid #434634;
   border-radius: 9px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   color: #45556b;
 }
 
 /* iOS Button */
 #iosBtn {
-  border: 1px solid #45556b;
+  border: 1px solid #434634;
   border-radius: 9px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   color: #45556b;
 }
 
@@ -852,7 +874,7 @@ h2 {
   height: auto; /* dynamic height */
   max-height: 80vh; /* prevent overflowing screen */
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   text-align: center;
   box-sizing: border-box;
 }
@@ -940,7 +962,7 @@ h2 {
   border-radius: 19px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   width: 90%;
   max-width: 368px;
   height: auto;
@@ -1065,7 +1087,7 @@ h2 {
   max-height: 300px;
   /* collapsed height */
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   text-align: center;
   box-sizing: border-box;
   transition: max-height 0.4s ease;
@@ -1118,7 +1140,7 @@ h2 {
 
 /* Hadir button */
 #hadirBtn {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   /* semi-transparent white */
   border: 1px solid #434634;
   color: #434634;
@@ -1127,7 +1149,7 @@ h2 {
 
 /* Tidak Hadir button */
 #tidakhadirBtn {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 254, 248, 1);
   /* semi-transparent white */
   border: 1px solid #434634;
   color: #434634;
