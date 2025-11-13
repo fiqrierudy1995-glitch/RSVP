@@ -3,13 +3,13 @@
 =========================== */
 @font-face {
   font-family: "Imperial";
-  src: url("../fonts/Imperial.ttf") format("truetype");
+  src: url("/fazliana-fiqrie/fonts/Imperial.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Holla";
-  src: url("../fonts/Holla.ttf") format("truetype");
+  src: url("/fazliana-fiqrie/fonts/Holla.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
