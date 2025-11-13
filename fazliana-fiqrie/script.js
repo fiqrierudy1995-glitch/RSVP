@@ -158,30 +158,51 @@ function addSnowflakes() {
   }
 }
 
-// ==========================
-// === Countdown ===
-const weddingDate = new Date("December 27, 2025 10:00:00").getTime();
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = weddingDate - now;
+// Countdown for the wedding date: December 27, 2025, at 10:00 AM
+    const weddingDate = new Date("December 27, 2025 10:00:00").getTime();
+    let countdownInterval;
 
-  if (distance < 0) {
-    document.querySelector(".countdown").innerHTML = "<h3>Majlis sudah bermula 🎉</h3>";
-    return;
-  }
+    // Function to update the countdown
+    function updateCountdown() {
+        const now = Date.now();
+        const distance = weddingDate - now;
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        if (distance < 0) {
+            document.querySelector(".countdown").innerHTML = "<h3>Majlis sudah bermula 🎉</h3>";
+            clearInterval(countdownInterval);
+            return;
+        }
 
-  document.getElementById("hari").innerText = days;
-  document.getElementById("jam").innerText = hours;
-  document.getElementById("minit").innerText = minutes;
-  document.getElementById("saat").innerText = seconds;
-}
-setInterval(updateCountdown, 1000);
-updateCountdown();
+        const days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Get elements to update the countdown
+        const hariEl  = document.getElementById("hari");
+        const jamEl   = document.getElementById("jam");
+        const minitEl = document.getElementById("minit");
+        const saatEl  = document.getElementById("saat");
+
+        // Update the countdown values
+        if (hariEl && jamEl && minitEl && saatEl) {
+            hariEl.innerText  = String(days);
+            jamEl.innerText   = String(hours);
+            minitEl.innerText = String(minutes);
+            saatEl.innerText  = String(seconds);
+        } else {
+            console.error("Countdown element missing", {
+                hariEl, jamEl, minitEl, saatEl
+            });
+            clearInterval(countdownInterval);
+        }
+    }
+
+    // Ensure the DOM content is fully loaded before executing the countdown
+    document.addEventListener("DOMContentLoaded", () => {
+        updateCountdown();
+        countdownInterval = setInterval(updateCountdown, 1000);  // Update every second
+    });
 
 // ==========================
 // === Calendar ===
@@ -392,8 +413,8 @@ async function loadUcapan() {
       list.innerHTML = data.ucapans
         .map(({ ucapan, nama, jenis }) => `
           <div class="ucapan-item ${jenis === "Tidak Hadir" ? "tidak-hadir" : "hadir"}">
-            <p class="ucapan-text">"${ucapan}"</p>
-            ${nama ? `<p class="ucapan-nama">– ${nama}</p>` : ""}
+            <p class="ucapan-text">"${ucapan}"💕</p>
+${nama ? `<p class="ucapan-nama"> ${nama}</p>` : ""}
           </div>
         `)
         .join("");
@@ -429,37 +450,7 @@ function toggleHadirBersama() {
 // Run once on load
 toggleHadirBersama();
 
-// Run whenever dropdown changes
-jumlahKehadiran.addEventListener("change", toggleHadirBersama);
 
-const coverImage = document.getElementById("coverImage");
-const styleSwitcher = document.getElementById("styleSwitcher");
-const styleControl = document.getElementById("styleControl");
 
-const styles = {
-  1: {
-    bg: "https://i.ibb.co/YTKMhHTh/Floral-Watercolor-Illustration-Wedding-Invitation-430-x-820-px.png",
-    cover: "https://i.ibb.co/FG4dJY2/STYLE1-GISTESY.png"
-  },
-  2: {
-    bg: "https://i.ibb.co/YTKMhHTh/Floral-Watercolor-Illustration-Wedding-Invitation-430-x-820-px.png",
-    cover: "https://i.ibb.co/RqvFYtY/STYLE1-LUXURIOS.png"
-  }
-};
-
-// Show dropdown only after curtain opens
-openBtn && openBtn.addEventListener("click", () => {
-  frame.classList.add("open");
-  setTimeout(() => {
-    styleControl.style.display = "block";  // 👈 show switcher
-  }, 1800); // matches curtain open animation
-});
-
-// Change both cover + background
-styleSwitcher.addEventListener("change", e => {
-  const choice = styles[e.target.value];
-  frame.style.backgroundImage = `url('${choice.bg}')`;
-  coverImage.src = choice.cover;
-});
 
 
