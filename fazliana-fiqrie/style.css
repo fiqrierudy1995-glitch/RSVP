@@ -1260,8 +1260,7 @@ h2 {
 #jumlahKehadiran option {
   font-family: 'Fahkwang', sans-serif;  /* Apply Fahkwang font */
   font-size: 20px;  /* Increased font size for options */
-  color: #434634;
-  padding: 10px 14px;  /* Padding for spacing inside options */
+  color: #434634;  padding: 10px 14px;  /* Padding for spacing inside options */
   background-color: #fff;  /* Ensure the background is white for clarity */
 }
 

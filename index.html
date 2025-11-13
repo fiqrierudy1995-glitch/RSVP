@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JemputHati.com — Elegant Wedding E-Invitations</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Holla', sans-serif; }
+    body { background: #fffafc; color: #444; line-height: 1.6; position: relative; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+    /* Fullscreen overlay for "Coming Soon" message */
+    .coming-soon-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .coming-soon-overlay h2 {
+      font-size: 3em;
+      color: #b83b5e;
+      margin-bottom: 1em;
+    }
+
+    .coming-soon-overlay p {
+      font-size: 1.5em;
+      color: #666;
+      margin-bottom: 1.5em;
+    }
+
+    .coming-soon-btn {
+      background: #b83b5e;
+      color: white;
+      padding: 0.75em 1.5em;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .coming-soon-btn:hover {
+      background: #9c2e4c;
+    }
+
+    /* Styling for the page content (hidden for now) */
+    .content {
+      display: none;
+    }
+
+    footer { 
+      background: #f8e1e7; 
+      text-align: center; 
+      padding: 2em 1em; 
+      margin-top: 2em; 
+    }
+    footer p { 
+      color: #b83b5e; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fullscreen Coming Soon Overlay -->
+  <div class="coming-soon-overlay">
+    <h2>Coming Soon!</h2>
+    <p>JemputHati.com is currently under construction. Please check back soon!</p>
+    <a href="mailto:info@jemputhati.com" class="coming-soon-btn">Contact Us</a>
+  </div>
+
+  <!-- Hidden Website Content, Only Visible After Launch -->
+  <div class="content">
+    <header>
+      <h1>Welcome to JemputHati.com</h1>
+      <p>Beautiful, paperless wedding invitations with instant RSVP</p>
+    </header>
+
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="gallery">
+      <h2 style="text-align:center; color:#b83b5e; margin-bottom:1em;">Our Designs</h2>
+      <div class="gallery">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250?text=Floral+Invite" alt="Floral Invitation">
+          <h3>Floral Elegance</h3>
+          <p class="price">$25 • Editable Template</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250?text=Modern+Invite" alt="Modern Invitation">
+          <h3>Modern Minimalist</h3>
+          <p class="price">$20 • Editable Template</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250?text=Classic+Invite" alt="Classic Invitation">
+          <h3>Classic Romance</h3>
+          <p class="price">$22 • Editable Template</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" style="text-align:center;">
+      <h2 style="color:#b83b5e;">Pricing</h2>
+      <p>Buy once, customize forever. All invitations come with RSVP tracking.</p>
+      <a href="#contact" class="btn">Order Your Invitation</a>
+    </section>
+
+    <section id="rsvp">
+      <h2 style="text-align:center; color:#b83b5e; margin-bottom:1em;">RSVP Form</h2>
+      <form id="rsvpForm">
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <select id="attendance" name="attendance" required>
+          <option value="">Will you attend?</option>
+          <option value="yes">Yes, I’ll be there!</option>
+          <option value="no">Sorry, can’t make it.</option>
+        </select>
+        <textarea id="message" name="message" placeholder="Any message to the couple?" rows="3"></textarea>
+        <button type="submit" class="btn">Send RSVP</button>
+      </form>
+    </section>
+
+    <footer id="contact">
+      <p>© 2025 JemputHati.com | <a href="mailto:info@jemputhati.com" style="color:#b83b5e;">info@jemputhati.com</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
