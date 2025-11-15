@@ -2,269 +2,349 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>Fazliana & Fiqrie Wedding Invitation</title>
-    <meta name="description" content="Raikan cinta kami di Majlis Bertaut Kasih Fazliana & Fiqrie." />
-<!-- PNG versions -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Majlis Bertaut Kasih Fazliana & Fiqrie 💍" />
-    <meta property="og:description" content="Dengan penuh kasih dan syukur, kami menjemput anda meraikan hari bahagia kami." />
-    <meta property="og:image" content="https://jemputkasih.com/images/frontpage.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://jemputkasih.com" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Majlis Bertaut Kasih Fazliana & Fiqrie 💍" />
-    <meta name="twitter:description" content="Raikan cinta kami di Majlis Bertaut Kasih Fazliana & Fiqrie." />
-    <meta name="twitter:image" content="https://jemputkasih.com/images/frontpage.png" />
-
-    <link rel="icon" href="https://jemputkasih.com/images/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Raikan cinta kami di Majlis Bertaut Kasih Fazliana & Fiqrie."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <link
+      rel="icon"
+      href="https://jemputkasih.com/images/favicon.ico"
+      type="image/x-icon"
+    />
 
     <style>
-      /* Global Styles */
+      /* ===== Global reset and safety ===== */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
       body {
-        font-family: 'Helvetica Neue', Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #ffffff;
+        overflow-x: hidden; /* prevents horizontal scroll */
+        font-family: "Helvetica Neue", Arial, sans-serif;
         color: #333333;
         line-height: 1.6;
-        text-align: center; /* Centering everything */
+        text-align: center;
+        background-color: #ffffff;
       }
 
-      /* Mobile frame for simulating phone screen */
+      /* ===== Page container / mobile mock ===== */
+      .page-wrapper {
+        padding: 20px;
+      }
+
       .mobile-frame {
         width: 100%;
-        max-width: 430px;
-        height: 844px;
+        max-width: 420px;
+        /* allow height to grow with content (no fixed height) */
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        border: 16px solid #fff;
+        border: 16px solid #fff; /* phone bezel look */
         border-radius: 36px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+        background: #fff;
       }
 
-      /* Content inside mobile frame */
+      /* content scrolls inside frame */
       .content {
         padding: 20px;
         height: 100%;
+        max-height: calc(
+          100vh - 120px
+        ); /* keeps content reasonable on short screens */
         overflow-y: auto;
       }
 
-      /* Header */
+      /* header */
       header {
         background-color: #fff;
         text-align: center;
-        padding: 20px 0;
-        font-size: 22px;
+        padding: 14px 0;
+        font-size: 20px;
         color: #2c3e50;
-        font-weight: bold;
-        border-bottom: 2px solid #ddd;
+        font-weight: 700;
+        border-bottom: 1px solid #eee;
       }
 
       header nav ul {
         list-style: none;
         padding: 0;
-        margin-top: 10px;
-        text-align: center;
+        margin: 8px 0 0;
       }
-
       header nav ul li {
         display: inline-block;
-        margin: 10px;
+        margin: 0 8px;
       }
-
       header nav ul li a {
         text-decoration: none;
-        color: #000000;
-        font-weight: bold;
+        color: #111;
+        font-weight: 600;
       }
 
-      /* Main Content Section */
+      /* main */
       .main-content {
-        margin-top: 20px;
+        margin-top: 18px;
         text-align: center;
       }
+      .main-content h2 {
+        margin: 8px 0 6px;
+        font-size: 20px;
+        color: #2c3e50;
+      }
+      .main-content p {
+        margin: 0 0 12px;
+        color: #4a4a4a;
+      }
+.button-container {
+    display: flex;
+    justify-content: center;  /* Centers buttons horizontally */
+    gap: 16px;                /* Space between buttons */
+    margin-top: 20px;         /* Optional spacing above */
+}
 
       .button {
-        padding: 12px 24px;
+        display: inline-block;
+        padding: 10px 18px;
         background-color: #efe4aaa4;
-        color: rgb(0, 0, 0);
+        color: #000;
         border: none;
-        border-radius: 5px;
-        font-size: 16px;
+        border-radius: 8px;
+        font-size: 15px;
         cursor: pointer;
-        margin: 10px;
-        width: 200px;
+        margin: 8px;
+        min-width: 140px;
       }
-
       .button:hover {
-        background-color: #ffffff;
+        filter: brightness(0.98);
       }
 
-      /* RSVP Section for Attending Guests and Wishes (Side by Side) */
+      /* ===== RSVP Sections (flex layout on desktop, stacked on mobile) ===== */
       .view-sections {
         display: flex;
         justify-content: center;
         gap: 30px;
         margin-top: 20px;
+        flex-wrap: wrap;
+        max-width: 100%;
       }
 
+      /* Use calc(50% - half-gap) so two cards fit perfectly */
       .view-section {
-        padding: 20px;
-        width: 90%; /* Allow both sections to take up equal space */
+        padding: 18px;
+        width: calc(50% - 15px); /* desktop: two columns */
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid #e0e0e0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e9e9e9;
         text-align: center;
       }
 
       .view-section h2 {
         color: #2c3e50;
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 14px;
+        text-align: center;
       }
 
+      /* table responsiveness */
+      .table-wrap {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
       table {
         width: 100%;
-        margin-top: 10px;
         border-collapse: collapse;
-        text-align: center;
+        margin-top: 6px;
+        text-align: left;
       }
-
       table th,
       table td {
-        padding: 12px 18px;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-      }
-
-      table th {
-        background-color: #e8f1f2;
-        color: #2c3e50;
-        font-weight: bold;
-      }
-
-      table td {
-        background-color: #f9f9f9;
-      }
-
-      table tr:hover {
-        background-color: #f1f1f1;
-      }
-
-      /* Minimalist Wedding Design */
-      footer {
-        background-color: #fff;
-        color: #2c3e50;
-        padding: 10px;
-        text-align: center;
-        border-top: 1px solid #ddd;
+        padding: 10px 12px;
+        border-bottom: 1px solid #eee;
         font-size: 14px;
       }
+      table th {
+        background-color: #f1f6f6;
+        color: #2c3e50;
+        text-align: left;
+        font-weight: 600;
+      }
+      table td {
+        background-color: transparent;
+        color: #333;
+      }
 
-      /* Responsive Design */
+      /* footer */
+      footer {
+        margin-top: 18px;
+        background-color: transparent;
+        color: #2c3e50;
+        padding: 12px 0;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      /* small screens: stack and full width */
       @media (max-width: 768px) {
         .mobile-frame {
-          height: 100%;
-          width: 100%;
+          max-width: 100%;
+          border-radius: 20px;
+        }
+        .content {
+          max-height: none;
         }
 
         .view-sections {
-          flex-direction: column; /* Stack the sections on small screens */
-          gap: 20px;
+          flex-direction: column;
+          gap: 16px;
         }
-
+        .view-section {
+          width: 100%;
+        } /* important: full width on mobile */
         .button {
           width: 100%;
+          max-width: none;
         }
-
         table th,
         table td {
-          padding: 10px;
+          padding: 8px 10px;
+          font-size: 13px;
         }
+      }
+
+      /* images and general responsiveness */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* accessibility focus */
+      .button:focus {
+        outline: 3px solid rgba(46, 132, 255, 0.18);
+        outline-offset: 2px;
       }
     </style>
   </head>
+
   <body>
-    <!-- Mobile Frame -->
-    <div class="mobile-frame">
-      <div class="content">
-        <!-- Header Section -->
-        <header>
-          <h1>RSVP</h1>
-          <nav>
-            <ul>
-              <li><a href="/fazliana-fiqrie">Home</a></li>
-              <li><a href="/fazliana-fiqrie/dashboard">Dashboard</a></li>
-            </ul>
-          </nav>
-        </header>
+    <div class="page-wrapper">
+      <div
+        class="mobile-frame"
+        role="application"
+        aria-label="Invitation preview"
+      >
+        <div class="content">
+          <header>
+            <div>Majlis Bertaut Kasih</div>
+          </header>
 
-        <!-- Main Content Section -->
-        <div class="main-content">
-          <h2>We are Getting Married!</h2>
-          <p>Join us in celebrating our special day. We are excited to share this beautiful journey with you!</p>
-          
-          <!-- Display Total Attendance -->
-          <p id="total-attendance" style="font-weight: bold; font-size: 18px; margin-top: 20px;">Total Attendance: Loading...</p>
+          <!-- Main Content Section -->
+          <div class="main-content">
+            <h2>Fazliana &amp; Fiqrie 💍</h2>
+            <p>
+              Dengan penuh kasih dan syukur, kami menjemput anda meraikan hari
+              bahagia kami.
+            </p>
 
-          <!-- Two buttons to toggle between Attendance and Wishes -->
-          <button class="button" id="view-attendance">View Attendance</button>
-          <button class="button" id="view-wishes">View Wishes</button>
-        </div>
+            <!-- Display Total Attendance -->
+            <p
+              id="total-attendance"
+              style="font-weight: 700; font-size: 16px; margin-top: 12px"
+            >
+              Kehadiran: Loading...
+            </p>
 
-        <!-- RSVP Sections for Attending Guests and Wishes (Side by Side) -->
-        <div class="view-sections">
-          <!-- Attending Guests Section -->
-          <section class="view-section" id="attendance-section" style="display: none;">
-            <h2>Attending Guests</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                </tr>
-              </thead>
-              <tbody id="attending-guest-body">
-                <!-- Attending guests will be dynamically inserted here -->
-              </tbody>
-            </table>
-          </section>
+            <!-- Container for the buttons -->
+            <div class="button-container">
+              <button
+                class="button"
+                id="view-attendance"
+                aria-controls="attendance-section"
+              >
+                Kehadiran
+              </button>
+              <button
+                class="button"
+                id="view-wishes"
+                aria-controls="wishes-section"
+              >
+                Ucapan
+              </button>
+            </div>
+          </div>
 
-          <!-- Wishes Section -->
-          <section class="view-section" id="wishes-section" style="display: none;">
-            <h2>All Wishes</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Wish</th>
-                </tr>
-              </thead>
-              <tbody id="all-wishes-body">
-                <!-- Wishes will be dynamically inserted here -->
-              </tbody>
-            </table>
-          </section>
+          <!-- RSVP Sections -->
+          <div class="view-sections" role="region" aria-label="RSVP and Wishes">
+            <!-- Attending Guests Section -->
+            <section
+              class="view-section"
+              id="attendance-section"
+              aria-hidden="true"
+              style="display: none"
+            >
+              <h2>Senarai Tetamu</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nama</th>
+                    </tr>
+                  </thead>
+                  <tbody id="attending-guest-body">
+                    <!-- inserted by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Wishes Section -->
+            <section
+              class="view-section"
+              id="wishes-section"
+              aria-hidden="true"
+              style="display: none"
+            >
+              <h2>Ucapan</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nama</th>
+                      <th>Ucapan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="all-wishes-body">
+                    <!-- inserted by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <p>&copy; 2025 Fazliana &amp; Fiqrie 💕</p>
+      </footer>
     </div>
 
-    <footer>
-      <p>&copy; 2025 Fazliana & Fiqrie 💕</p>
-    </footer>
-
     <script>
-      const API_KEY = 'AIzaSyBzu_y3uzM23uaH11OID5KXkH7RGIlrhXg';  // Replace with your actual API key
-      const SHEET_ID = '1wsWUfO921Hso8k_KLFtDVCTUE41ds4w7PzgyAKxJ9No';  // Your Sheet ID
+      /* ===== Google Sheets config ===== */
+      const API_KEY = "AIzaSyBzu_y3uzM23uaH11OID5KXkH7RGIlrhXg"; // Replace if needed
+      const SHEET_ID = "1wsWUfO921Hso8k_KLFtDVCTUE41ds4w7PzgyAKxJ9No";
 
       const attendingGuestsApiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/SENARAI%20PENUH!B4:B?key=${API_KEY}`;
       const wishesApiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/WISHES!I4:L?key=${API_KEY}`;
@@ -272,73 +352,91 @@
 
       async function fetchRSVPData() {
         try {
-          const attendingResponse = await fetch(attendingGuestsApiUrl);
-          const attendingData = await attendingResponse.json();
+          const [attR, wishR, totalR] = await Promise.all([
+            fetch(attendingGuestsApiUrl),
+            fetch(wishesApiUrl),
+            fetch(totalAttendanceApiUrl),
+          ]);
 
-          const wishesResponse = await fetch(wishesApiUrl);
-          const wishesData = await wishesResponse.json();
+          const attendingData = await (attR.ok ? attR.json() : {});
+          const wishesData = await (wishR.ok ? wishR.json() : {});
+          const totalData = await (totalR.ok ? totalR.json() : {});
 
-          const totalAttendanceResponse = await fetch(totalAttendanceApiUrl);
-          const totalAttendanceData = await totalAttendanceResponse.json();
-          const totalAttendance = totalAttendanceData.values[0][0];  // D4 value
+          // safer access with optional chaining
+          const attendingGuests = attendingData.values || [];
+          const wishes = wishesData.values || [];
+          const totalAttendance =
+            (totalData.values &&
+              totalData.values[0] &&
+              totalData.values[0][0]) ||
+            "0";
 
-          const attendingGuests = attendingData.values;
-          const wishes = wishesData.values;
+          const attendingGuestBody = document.getElementById(
+            "attending-guest-body"
+          );
+          const allWishesBody = document.getElementById("all-wishes-body");
+          const totalAttendanceDisplay =
+            document.getElementById("total-attendance");
 
-          const attendingGuestBody = document.getElementById('attending-guest-body');
-          const allWishesBody = document.getElementById('all-wishes-body');
-          const totalAttendanceDisplay = document.getElementById('total-attendance');
-
-          attendingGuestBody.innerHTML = '';
-          allWishesBody.innerHTML = '';
+          attendingGuestBody.innerHTML = "";
+          allWishesBody.innerHTML = "";
 
           // Display the total attendance
-          totalAttendanceDisplay.textContent = `Total Attendance: ${totalAttendance}`;
+          totalAttendanceDisplay.textContent = `Jumlah kehadiran: ${totalAttendance}`;
 
-          // Display attending guests
+          // Display attending guests (guard against empty rows)
           attendingGuests.forEach((row) => {
-            const guestName = row[0];
-            const tr = document.createElement('tr');
-            const nameTd = document.createElement('td');
-            nameTd.textContent = guestName;
-            tr.appendChild(nameTd);
+            const guestName = row && row[0] ? row[0] : "";
+            if (!guestName) return;
+            const tr = document.createElement("tr");
+            const td = document.createElement("td");
+            td.textContent = guestName;
+            tr.appendChild(td);
             attendingGuestBody.appendChild(tr);
           });
 
           // Display all wishes
           wishes.forEach((row) => {
-            const guestName = row[0];
-            const wish = row[1] || 'No message';
-
-            const tr = document.createElement('tr');
-            const nameTd = document.createElement('td');
-            nameTd.textContent = guestName;
+            const guestName = row && row[0] ? row[0] : "";
+            const wish = row && row[1] ? row[1] : "";
+            if (!guestName && !wish) return;
+            const tr = document.createElement("tr");
+            const nameTd = document.createElement("td");
+            nameTd.textContent = guestName || "-";
+            const wishTd = document.createElement("td");
+            wishTd.textContent = wish || "-";
             tr.appendChild(nameTd);
-
-            const wishTd = document.createElement('td');
-            wishTd.textContent = wish;
             tr.appendChild(wishTd);
-
             allWishesBody.appendChild(tr);
           });
-
         } catch (error) {
-          console.error('Error fetching data from Google Sheets:', error);
+          console.error("Error fetching data from Google Sheets:", error);
+          document.getElementById("total-attendance").textContent =
+            "Jumlah kehadiran: —";
         }
       }
 
-      // Fetch data once page loads
+      // initial load
       fetchRSVPData();
 
-      // Toggle between the two views (Attendance and Wishes)
-      document.getElementById('view-attendance').addEventListener('click', function () {
-        document.getElementById('attendance-section').style.display = 'block';
-        document.getElementById('wishes-section').style.display = 'none';
+      // Toggle views with accessible attributes
+      const btnAttendance = document.getElementById("view-attendance");
+      const btnWishes = document.getElementById("view-wishes");
+      const attendanceSection = document.getElementById("attendance-section");
+      const wishesSection = document.getElementById("wishes-section");
+
+      btnAttendance.addEventListener("click", () => {
+        attendanceSection.style.display = "block";
+        attendanceSection.setAttribute("aria-hidden", "false");
+        wishesSection.style.display = "none";
+        wishesSection.setAttribute("aria-hidden", "true");
       });
 
-      document.getElementById('view-wishes').addEventListener('click', function () {
-        document.getElementById('attendance-section').style.display = 'none';
-        document.getElementById('wishes-section').style.display = 'block';
+      btnWishes.addEventListener("click", () => {
+        attendanceSection.style.display = "none";
+        attendanceSection.setAttribute("aria-hidden", "true");
+        wishesSection.style.display = "block";
+        wishesSection.setAttribute("aria-hidden", "false");
       });
     </script>
   </body>
