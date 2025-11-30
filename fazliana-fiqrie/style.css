@@ -546,8 +546,6 @@ h2 {
    💌 WISHES / UCAPAN SECTION
 =========================== */
 /* Outer container */
-
-
 .message {
   display: flex;
   flex-direction: column;
@@ -561,7 +559,7 @@ h2 {
    /* Add this: */
   flex: 1 1 auto; /* allow children to grow/shrink */
   height: 400px;  /* important for scrollable children */
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 
