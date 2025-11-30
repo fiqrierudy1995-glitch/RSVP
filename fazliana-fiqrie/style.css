@@ -546,6 +546,13 @@ h2 {
    💌 WISHES / UCAPAN SECTION
 =========================== */
 /* Outer container */
+
+.ucapan-container {
+  width: 100%;
+  height: 380px; /* the scrollable box height */
+  overflow-y: auto;
+  padding-bottom: 40px; /* bottom gap inside the box */
+  box-sizing: border-box;
 .message {
   display: flex;
   flex-direction: column;
@@ -579,9 +586,7 @@ h2 {
   gap: 0; /* no gap between messages */
   padding: 0 0 20px;
   padding-bottom: calc(var(--navbar-height) + 16px);
-  min-height: 0;      /* Prevent it from pushing parent */
   width: 100%;
-  overflow-y: auto;
   box-sizing: border-box;
 
   /* Hide scrollbar */
