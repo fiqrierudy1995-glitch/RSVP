@@ -579,7 +579,9 @@ h2 {
   gap: 0; /* no gap between messages */
   padding: 0 0 10px;
   padding-bottom: calc(var(--navbar-height) + 16px);
-  height: 400px;
+  flex: 1 1 auto;     /* Let it expand */
+  min-height: 0;      /* Prevent it from pushing parent */
+  max-height: none;   /* No forced cutoff */
   width: 100%;
   overflow-y: auto;
   box-sizing: border-box;
