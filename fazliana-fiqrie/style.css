@@ -560,7 +560,7 @@ h2 {
   box-sizing: border-box;
    /* Add this: */
   flex: 1 1 auto; /* allow children to grow/shrink */
-  min-height: 0;  /* important for scrollable children */
+  height: 400px;  /* important for scrollable children */
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -580,7 +580,7 @@ h2 {
   align-items: center;
   gap: 0; /* no gap between messages */
   padding: 0 0 20px;
-  padding-bottom: calc(var(--navbar-height) + 16px);
+  padding-bottom: calc(var(--navbar-height) + 20px);
   width: 100%;
   box-sizing: border-box;
    height: 400px;
