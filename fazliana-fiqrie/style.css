@@ -577,9 +577,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 0; /* no gap between messages */
-  padding: 0 0 10px;
+  padding: 0 0 20px;
   padding-bottom: calc(var(--navbar-height) + 16px);
-  height: 400px;      /* Prevent it from pushing parent */
+  min-height: 0;      /* Prevent it from pushing parent */
   width: 100%;
   overflow-y: auto;
   box-sizing: border-box;
