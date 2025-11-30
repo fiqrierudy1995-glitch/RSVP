@@ -561,7 +561,7 @@ h2 {
    /* Add this: */
   flex: 1 1 auto; /* allow children to grow/shrink */
   min-height: 0;  /* important for scrollable children */
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
