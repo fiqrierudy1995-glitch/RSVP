@@ -1407,7 +1407,7 @@ border-radius: 25px;
   justify-content: center;
   gap: 5px;
   /* gap between icon and text */
-  padding: 10px 0;
+  padding: 5px 0;
   font-size: 14px;
   font-weight: 200;
   border-radius: 8px;
@@ -1670,6 +1670,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
