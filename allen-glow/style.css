@@ -546,7 +546,7 @@ body {
    🌸 Couple Photo Section
 =========================== */
 .couple-photo-section {
-  padding: 30px 0;
+  padding: 0 0;
   text-align: center;
   margin: 0;
   background-color: #efe2e2;
@@ -556,13 +556,11 @@ body {
 
 /* Frame / Box Wrapper */
 .photo-frame {
-  background: rgba(255, 255, 255, 0.6); /* slightly transparent white */
   width: 90%;
   max-width: 500px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   border-radius: 16px;
-  border: 1px solid #e1d4d4;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border: 1px  #e1d4d4;
   box-sizing: border-box;
 }
 
@@ -1673,6 +1671,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
