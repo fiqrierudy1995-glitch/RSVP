@@ -655,7 +655,7 @@ h2#countdowntitle {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .time-unit {
@@ -1671,6 +1671,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
