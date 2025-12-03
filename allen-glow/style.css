@@ -53,7 +53,7 @@ body {
   transform-origin: left;
   transform: rotateY(0deg);
   z-index: 10;
-  border-right: 3px solid rgb(255, 255, 255);
+  border-right: 3px solid rgb(225, 217, 216, 0.5);
   /* subtle bluish edge */
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.25);
   /* outside shadow */
@@ -64,7 +64,7 @@ body {
   right: 0;
   transform-origin: right;
   z-index: 9;
-  border-left: 3px solid rgba(255, 255, 255, 0.911);
+  border-left: 3px solid rgba(225, 217, 216, 0.5);
   box-shadow: -5px 0 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -1672,6 +1672,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
