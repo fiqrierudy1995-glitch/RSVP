@@ -428,14 +428,12 @@ body {
   margin: 0px 0px 10px;
     font-family: "Quattrocento";
   font-size: 16px;
-
 }
 
 .time-section .hour1-text {
   font-weight: 300;
   margin: 0 0 40px;
 }
-
 
 /* ===========================
    🌸 PAGE 3 - PROGRAMME
@@ -496,7 +494,6 @@ body {
   margin: 10px 0 4px;
   font-weight: 500;
   font-family: "Quattrocento";
-
 }
 
 .box-text p {
@@ -532,9 +529,8 @@ body {
 .doa-verse {
   margin: 0px 25px 6px ;       /* small spacing under verse */
   font-style: italic;
-    text-align: center;
+  text-align: center;
   font-size:16px;
-
 }
 
 /* Name / reference */
@@ -1675,6 +1671,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
