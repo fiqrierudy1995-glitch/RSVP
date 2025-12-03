@@ -516,7 +516,7 @@ body {
   justify-content: center;
   padding: 24px 0; /* reduced padding */
   width: 100%;
-  height: auto;
+  height: 20px;
   margin: 0; /* ensure no extra space */
   box-sizing: border-box;
 }
@@ -525,6 +525,7 @@ body {
   margin: 10px 25px 6px ;       /* small spacing under verse */
   font-style: italic;
     text-align-last: center;
+  font-size:16px;
 
 }
 
@@ -534,6 +535,8 @@ body {
   font-weight:600;
   opacity: 0.8;
     text-align-last: center;
+    font-size:16px;
+
 
 }
 
@@ -1670,6 +1673,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
