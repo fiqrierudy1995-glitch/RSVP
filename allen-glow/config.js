@@ -16,7 +16,7 @@ of our beloved son and daughter.`,
   verse: "With Joy and Gratitude to Almighty God",
   date: {
     fullDate: "Saturday, 27 December 2025",
-    time: "03.00 pm - 5.00 pm"
+    time: "03.00 pm-5.00 pm"
   },
   venues: {
     ceremony: {
@@ -25,18 +25,18 @@ of our beloved son and daughter.`,
     },
     reception: {
       name: "D' Rimba House",
-      address: "Lorong Belian, Batu 7, Sandakan (Reception)"
+      address: "Lorong Belian, Batu 7, Sandakan (Wedding Party)"
     }
   },
   programme: [
-    { time: "06.00 pm", activity: "Guest arrival & welcome photo" },
-    { time: "07.00 Pm", activity: "Newlyweds' Entrance" },
-    { time: "07.15 pm", activity: "Grace Dinner served" },
-    { time: "08.00 am", activity: "Cake Cutting Ceremony" },
-    { time: "08.10 pm", activity: "Speeches & Toasts" },
-    { time: "08.30 am", activity: "Moment-Capturing Sessions" },
-    { time: "09.00 pm", activity: "Open Dance Floor" },
-    { time: "10.00 pm", activity: "Final Blessing & Send-Off" }
+    { time: "06.00 p.m", activity: "Guest arrival & welcome photo" },
+    { time: "07.00 p.m", activity: "Newlyweds' Entrance" },
+    { time: "07.15 p.m", activity: "Grace Dinner served" },
+    { time: "08.00 p.m", activity: "Cake Cutting Ceremony" },
+    { time: "08.10 p.m", activity: "Speeches & Toasts" },
+    { time: "08.30 p.m", activity: "Moment-Capturing Sessions" },
+    { time: "09.00 p.m", activity: "Open Dance Floor" },
+    { time: "10.00 p.m", activity: "Final Blessing & Send-Off" }
   ],
   prayer: `“Therefore what God has joined together, let no one separate.”<br>— Matthew 19:6`,
   photos: [
@@ -53,4 +53,5 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
 
