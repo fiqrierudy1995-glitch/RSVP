@@ -407,10 +407,8 @@ body {
 .date-section .date-text {
   font-weight: 600;
   margin: 13px 0px 10px;
-    font-family: "Quattrocento";
-    font-size: 16px;
-
-
+  font-family: "Quattrocento";
+  font-size: 16px;
 }
 
 .date-section .date1-text {
@@ -426,11 +424,16 @@ body {
 .time-section .hour-text {
   font-weight: 600;
   margin: 0px 0px 10px;
-    font-family: "Quattrocento";
+  font-family: "Quattrocento";
   font-size: 16px;
 }
 
-.time-section .hour1-text, .hour2-text {
+.time-section .hour1-text{
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+.time-section .hour2-text {
   font-weight: 300;
   margin: 0 0 40px;
 }
@@ -1670,6 +1673,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
