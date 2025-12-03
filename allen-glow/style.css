@@ -675,7 +675,7 @@ h2#countdowntitle {
 
 .time-box {
   width: 70px;
-  height: 70px;
+  height: 80px;
   background: rgba(255, 255, 255, 0.8);
   border: 2px solid rgba(200, 200, 200, 0.5);
   border-radius: 4px;
@@ -797,7 +797,7 @@ h2#countdowntitle {
   width: 100%;
   overflow-y: auto;
   box-sizing: border-box;
-    font-family: "Quattrocento";
+  font-family: "Quattrocento";
 
 
   /* Hide scrollbar */
@@ -822,7 +822,6 @@ h2#countdowntitle {
   word-wrap: break-word;
   white-space: normal;
   margin-bottom: 15px;
-
 }
 
 /* Each wish block */
@@ -1671,6 +1670,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
