@@ -357,7 +357,7 @@ body {
 .venue-item {
 
   margin: 0px auto; /* Default margin */
-  padding: 3px 10px 10px ; /* Default padding */
+  padding: 0px 10px 10px ; /* Default padding */
   width: 400px;
   box-sizing: border-box; /* ✅ Ensures padding behaves consistently */
 }
@@ -1680,6 +1680,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
