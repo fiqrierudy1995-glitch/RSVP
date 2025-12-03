@@ -522,9 +522,9 @@ body {
 }
 /* Verse text */
 .doa-verse {
-  margin: 10px 25px 6px ;       /* small spacing under verse */
+  margin: 0px 25px 6px ;       /* small spacing under verse */
   font-style: italic;
-    text-align-last: center;
+    text-align: center;
   font-size:16px;
 
 }
@@ -630,7 +630,7 @@ body {
 /* Photo caption */
 .photo-caption {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: #584910;
   font-family: "Amsterdamone", sans-serif;
   font-weight: 400;
@@ -1095,6 +1095,7 @@ border-radius: 25px;
   background-color: rgba(255,255,255,0.8);
   font-family: "Roboto Mono";
   cursor: pointer;
+    color: #2d2b25;
 }
 .bank-details {
   margin-top: 10px;
@@ -1671,6 +1672,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
