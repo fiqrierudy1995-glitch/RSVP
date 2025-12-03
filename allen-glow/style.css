@@ -638,7 +638,7 @@ body {
    🌸 COUNTDOWN SECTION
 =========================== */
 .menghitung-hari {
-  height: 200px;
+  height: 230px;
   display: block;
 }
 
@@ -675,7 +675,7 @@ h2#countdowntitle {
 
 .time-box {
   width: 70px;
-  height: 80px;
+  height: 70px;
   background: rgba(255, 255, 255, 0.8);
   border: 2px solid rgba(200, 200, 200, 0.5);
   border-radius: 4px;
@@ -1670,6 +1670,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
