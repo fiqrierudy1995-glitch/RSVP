@@ -465,7 +465,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   background: rgba(255, 255, 255, 0.6);
   width: 300px;
-  max-height: 400px;
+  max-height: 460px;
   padding: 25px 20px;
   margin: 0 auto;
   backdrop-filter: blur(4px);
@@ -482,8 +482,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   margin: 0 0 20px;
-      font-family: "Quattrocento";
-
+  font-family: "Quattrocento";
 }
 
 .majlis1-text,.majlis3-text, .majlis5-text, .majlis7-text, .majlis9-text, .majlis11-text, .majlis13-text, .majlis15-text{
@@ -496,7 +495,7 @@ body {
 .box-text h4 {
   margin: 10px 0 4px;
   font-weight: 500;
-      font-family: "Quattrocento";
+  font-family: "Quattrocento";
 
 }
 
@@ -1682,6 +1681,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
