@@ -31,9 +31,9 @@ of our beloved son and daughter.`,
   programme: [
     { time: "06.00 p.m", activity: "Guest arrival & welcome photo" },
     { time: "07.00 p.m", activity: "Newlyweds' Entrance" },
-    { time: "07.15 p.m", activity: "Grace Dinner served" },
+    { time: "07.15 p.m", activity: "Grace"<br>"Dinner served" },
     { time: "08.00 p.m", activity: "Cake Cutting Ceremony" },
-    { time: "08.10 p.m", activity: "Speeches & Toasts" },
+    { time: "08.10 p.m", activity: "Speeches" },
     { time: "08.30 p.m", activity: "Moment-Capturing Sessions" },
     { time: "09.00 p.m", activity: "Open Dance Floor" },
     { time: "10.00 p.m", activity: "Final Blessing & Send-Off" }
@@ -53,6 +53,7 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
 
 
 
