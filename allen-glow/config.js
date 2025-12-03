@@ -11,7 +11,7 @@ const weddingDetails = {
   },
   kataAluan: `warmly invite <br>
 Dato’/Datin/Sir/Madam/Mr./Ms.<br>
-to witness and celebrate the Holy Matrimony<br>
+to witness and celebrate the love and marriage<br>
 of our beloved son and daughter.`,
   verse: "With Joy and Gratitude to Almighty God",
   date: {
@@ -21,11 +21,11 @@ of our beloved son and daughter.`,
   venues: {
     ceremony: {
       name: "St. Michael's and All Angels Church",
-      address: "Pusat Bandar Sandakan (Ceremony)"
+      address: "Pusat Bandar Sandakan <br>(Ceremony)"
     },
     reception: {
       name: "D' Rimba House",
-      address: "Lorong Belian, Batu 7, Sandakan (Wedding Party)"
+      address: "Lorong Belian, Batu 7, Sandakan<br> (Wedding Party)"
     }
   },
   programme: [
@@ -53,5 +53,6 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
 
 
