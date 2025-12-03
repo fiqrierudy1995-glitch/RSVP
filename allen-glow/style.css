@@ -474,7 +474,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
   width: 300px;
   max-height: auto;
-  padding: 25px 20px;
+  padding: 35px 20px;
   margin: 0 auto;
   backdrop-filter: blur(4px);
   overflow-y: auto;
@@ -1680,6 +1680,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
