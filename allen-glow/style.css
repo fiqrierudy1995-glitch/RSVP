@@ -36,8 +36,8 @@ body {
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 196, 204, 0.98) 0%,
-    /* almost white with blue tint */ rgba(255, 255, 255, 0.99) 100%
+    rgba(225, 217, 216, 0.5) 0%,
+    /* almost white with blue tint */ rgba(225, 217, 216, 0.5) 100%
       /* very light blue */
   );
   transform-style: preserve-3d;
@@ -1672,6 +1672,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
