@@ -1045,7 +1045,7 @@ border-radius: 25px;
   border-radius: 19px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
 
   width: 90%;
   max-width: 368px;
@@ -1132,7 +1132,7 @@ border-radius: 25px;
   height: auto; /* dynamic height */
   max-height: 80vh; /* prevent overflowing screen */
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
   box-sizing: border-box;
 }
@@ -1230,7 +1230,7 @@ border-radius: 25px;
   border-radius: 19px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   width: 90%;
   max-width: 368px;
   height: auto;
@@ -1360,7 +1360,7 @@ border-radius: 25px;
   max-height: 300px;
   /* collapsed height */
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
   box-sizing: border-box;
   transition: max-height 0.4s ease;
@@ -1672,6 +1672,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
