@@ -542,10 +542,8 @@ body {
   margin: 0;
   font-weight:600;
   opacity: 0.8;
-    text-align-last: center;
-    font-size:16px;
-
-
+  text-align-last: center;
+  font-size:16px;
 }
 
 /* ===========================
@@ -557,9 +555,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-    background-color: #E1D9DB;
-
-
+  background-color: #E1D9DB;
 }
 
 /* Frame / Box Wrapper */
@@ -624,16 +620,14 @@ body {
 }
 
 .photo-item img {
-   width: 90vw;      /* always fits the screen */
+  width: 90vw;      /* always fits the screen */
   max-width: 450px;     /* limit size but don't force square */
-  max-height: 450px;         /* keep original height = no cropping */
+  max-height: 460px;         /* keep original height = no cropping */
   object-fit: contain;    /* or contain, depending on style */
-  object-fit: cover;    /* or contain, depending on style */
   border-radius: 12px;
   display: block;
   margin: 0 auto;
 }
-
 
 /* Photo caption */
 .photo-caption {
@@ -1681,6 +1675,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
