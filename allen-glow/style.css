@@ -1291,8 +1291,8 @@ border-radius: 25px;
 #iosedBtn2{
   border-radius: 9px;
   border: 1px solid  #2d2b25;
-;
     font-family: "Roboto Mono";
+  color: #2d2b25;
 }
 
 
@@ -1670,6 +1670,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
