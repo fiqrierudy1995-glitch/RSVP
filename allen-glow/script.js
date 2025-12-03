@@ -248,7 +248,7 @@ function addSnowflakes() {
 
 // ==========================
 // === Countdown ===
-const weddingDate = new Date("December 22, 2025 11:00:00").getTime();
+const weddingDate = new Date("December 27, 2025 15:00:00").getTime();
 function updateCountdown() {
   const now = new Date().getTime();
   const distance = weddingDate - now;
@@ -445,5 +445,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
   styleSwitcher && applyStyle(styleSwitcher.value);
   // Load wishes (auto-refresh after curtain opens)
 });
+
 
 
