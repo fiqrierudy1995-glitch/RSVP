@@ -79,8 +79,8 @@ body {
    🌸 Logo
 =========================== */
 .logo {
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
   background: url("images/logo.png") no-repeat center / contain;
   position: absolute;
   top: 50%;
@@ -1682,6 +1682,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
