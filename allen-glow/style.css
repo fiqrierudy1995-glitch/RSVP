@@ -560,14 +560,16 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  width: 430px;
+    background-color: #E1D9DB;
+
+
 }
 
 /* Frame / Box Wrapper */
 .photo-frame {
-  width: 100%;
-  max-width: 430px;
-  padding: 0px 0px;
+  width: 90%;
+  max-width: 500px;
+  padding: 10px 10px;
   border-radius: 16px;
   border: 1px  #e1d4d4;
   box-sizing: border-box;
@@ -625,10 +627,10 @@ body {
 }
 
 .photo-item img {
-  width: 100vw;      /* always fits the screen */
-  max-width: 430px;     /* limit size but don't force square */
-  height: 100%;
-  max-height: auto;         /* keep original height = no cropping */
+   width: 90vw;      /* always fits the screen */
+  max-width: 450px;     /* limit size but don't force square */
+  max-height: 450px;         /* keep original height = no cropping */
+  object-fit: contain;    /* or contain, depending on style */
   object-fit: cover;    /* or contain, depending on style */
   border-radius: 12px;
   display: block;
@@ -1682,6 +1684,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
