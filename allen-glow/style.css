@@ -406,7 +406,7 @@ body {
   padding: 0px 0;
 }
 
-.tarikh-section .date-text {
+.date-section .date-text {
   font-weight: 600;
   margin: 13px 0px 10px;
     font-family: "Quattrocento";
@@ -1686,6 +1686,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
