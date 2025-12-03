@@ -488,6 +488,13 @@ body {
 
 }
 
+.majlis1-text,.majlis3-text, .majlis5-text, .majlis7-text, .majlis9-text, .majlis11-text, .majlis13-text, .majlis15-text{
+  font-size:16px;
+}
+.majlis4-text {
+  font-style: italic;
+}
+
 .box-text h4 {
   margin: 10px 0 4px;
   font-weight: 500;
@@ -1679,6 +1686,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
