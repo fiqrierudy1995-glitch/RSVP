@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amsterdamone";
-  src: url("../fonts/Amsterdamone.woff2") format("truetype");
+  src: url("allen-glow/fonts/Amsterdamone.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1670,4 +1670,5 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
