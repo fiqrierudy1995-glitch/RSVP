@@ -395,6 +395,8 @@ body {
   font-weight: 400;
   color: #4f4f4f;
   margin: 0;
+    font-family: "Roboto Mono";
+
 }
 
 /* 📅 Date Section */
@@ -438,8 +440,10 @@ body {
   margin: 0 0 20px;
 }
 .time-section .location-text {
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 0 10px;
+    color: #4f4f4f;
+
 }
 /* ===========================
    🌸 PAGE 3 - PROGRAMME
@@ -1676,6 +1680,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
