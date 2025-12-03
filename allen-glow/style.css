@@ -1045,7 +1045,7 @@ border-radius: 25px;
   border-radius: 19px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
-  background-color: rgba(225, 217, 216, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
 
   width: 90%;
   max-width: 368px;
@@ -1417,6 +1417,7 @@ border-radius: 25px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   height: 40px;
+  margin: 0 0 0;
 }
 
 /* Hadir button */
@@ -1673,6 +1674,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
