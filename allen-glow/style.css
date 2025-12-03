@@ -435,7 +435,7 @@ body {
 
 .time-section .hour2-text {
   font-weight: 300;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 /* ===========================
@@ -1673,6 +1673,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
