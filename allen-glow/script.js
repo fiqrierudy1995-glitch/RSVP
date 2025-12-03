@@ -95,9 +95,7 @@ if (typeof weddingDetails !== "undefined") {
   kataAluanText && (kataAluanText.innerHTML = weddingDetails.kataAluan);
   verseText && (verseText.textContent = weddingDetails.verse);
 
-  // Date & Time
-  dateText && (dateText.textContent = weddingDetails.date.fullDate);
-  timeText && (timeText.textContent = weddingDetails.date.time);
+ 
 
   // === Venues (safe version) ===
 if (weddingDetails.venues?.ceremony) {
@@ -447,4 +445,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
   styleSwitcher && applyStyle(styleSwitcher.value);
   // Load wishes (auto-refresh after curtain opens)
 });
+
 
