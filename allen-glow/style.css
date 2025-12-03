@@ -437,7 +437,10 @@ body {
   font-weight: 300;
   margin: 0 0 20px;
 }
-
+.time-section .location-text {
+  font-weight: 600;
+  margin: 0 0 10px;
+}
 /* ===========================
    🌸 PAGE 3 - PROGRAMME
 =========================== */
@@ -1673,6 +1676,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
