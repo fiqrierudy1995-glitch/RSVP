@@ -858,7 +858,7 @@ h2#countdowntitle {
  /* Dress Code Section */
 .dress-code-section {
   padding: 25px 20px;
-  margin: 30px 25px 100px;
+  margin: 30px 25px 130px;
   max-width: 800px;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -1673,6 +1673,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
