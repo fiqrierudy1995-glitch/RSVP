@@ -549,7 +549,7 @@ body {
   padding: 0 0;
   text-align: center;
   margin: 0;
-  background-color: #efe2e2;
+  background-color: #E1D9DB;
   display: flex;
   justify-content: center;
 }
@@ -1673,6 +1673,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
