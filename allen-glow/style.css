@@ -1227,7 +1227,7 @@ border-radius: 25px;
 
 /* Location Box */
 .locationpopup {
-  padding: 10px 20px 20px;
+  padding: 20px 20px 20px;
   border-radius: 19px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
@@ -1266,6 +1266,7 @@ border-radius: 25px;
   gap: 10px;
   flex-wrap: wrap;
   font-family: "Roboto Mono";
+  margin-bottom: 35px;
 }
 
 .buttoned-row button {
@@ -1674,6 +1675,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
