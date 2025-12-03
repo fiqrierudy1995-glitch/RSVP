@@ -21,7 +21,7 @@ of our beloved son and daughter.`,
   venues: {
     ceremony: {
       name: "St. Michael's and All Angels Church",
-      address: "Pusat Bandar Sandakan <br>(Ceremony)"
+      address: "Pusat Bandar Sandakan (Holy Matrimony)"
     },
     reception: {
       name: "D' Rimba House",
@@ -53,6 +53,7 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
 
 
 
