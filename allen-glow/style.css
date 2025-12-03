@@ -1128,7 +1128,8 @@ border-radius: 25px;
 .contactpopup {
   padding: 22px;
   border-radius: 30px;
-  width: 380px;
+  width: 90%;
+  max-width: 368px;
   height: auto; /* dynamic height */
   max-height: 80vh; /* prevent overflowing screen */
   box-shadow: 5px 5px 15px rgba(47, 68, 88, 0.3);
@@ -1672,6 +1673,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
