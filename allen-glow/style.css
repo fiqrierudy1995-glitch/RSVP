@@ -489,7 +489,7 @@ body {
 .box-text h3 {
   font-size: 16px;
   font-weight: 600;
-  margin: 0 0 20px;
+  margin: 15px 0 20px;
   font-family: "Quattrocento";
 }
 
@@ -1680,6 +1680,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
