@@ -430,7 +430,7 @@ body {
   font-size: 16px;
 }
 
-.time-section .hour1-text {
+.time-section .hour1-text, .hour2-text {
   font-weight: 300;
   margin: 0 0 40px;
 }
@@ -1670,6 +1670,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
