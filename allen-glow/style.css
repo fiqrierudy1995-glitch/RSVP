@@ -1396,7 +1396,7 @@ border-radius: 25px;
   /* center both buttons */
   gap: 10px;
   /* space between them */
-  margin-top: 30px;
+  margin-top: 10px;
     font-family: "Roboto Mono";
 
 }
@@ -1674,6 +1674,7 @@ border-radius: 25px;
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
