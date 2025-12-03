@@ -21,9 +21,7 @@ const parent3Text = document.querySelector(".parent3-text");
 const kataAluanText = document.querySelector(".aluan-text");
 const verseText = document.querySelector(".verse-text");
 
-// Date & Time
-const dateText = document.querySelector(".date1-text");
-const timeText = document.querySelector(".hour1-text");
+
 
 // Venues
 const ceremonyVenueName = document.querySelector(".venue-item.ceremony .venue-name");
@@ -449,3 +447,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
   styleSwitcher && applyStyle(styleSwitcher.value);
   // Load wishes (auto-refresh after curtain opens)
 });
+
