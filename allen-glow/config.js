@@ -7,7 +7,7 @@ const weddingDetails = {
   },
   parents: {
     groomParents: "JACOB & RUSINAH",
-    brideParents: "MICHAEL & CYNTHIA"
+    brideParents: "YIBIT & FRANCISCA"
   },
   kataAluan: `warmly invite <br>
 Dato’/Datin/Sir/Madam/Mr./Ms.<br>
@@ -15,8 +15,8 @@ to witness and celebrate the Holy Matrimony<br>
 of our beloved son and daughter.`,
   verse: "With Joy and Gratitude to Almighty God",
   date: {
-    fullDate: "Saturday, 22 December 2025",
-    time: "11.00 am - 4.00 pm"
+    fullDate: "Saturday, 27 December 2025",
+    time: "03.00 pm - 5.00 pm"
   },
   venues: {
     ceremony: {
@@ -29,19 +29,20 @@ of our beloved son and daughter.`,
     }
   },
   programme: [
-    { time: "10.00 am", activity: "Arrival of guests" },
-    { time: "11.00 am", activity: "Arrival of the bride and groom" },
-    { time: "12.00 pm", activity: "Photo session" },
-    { time: "11.00 am", activity: "Arrival of the bride and groom" },
-    { time: "12.00 pm", activity: "Photo session" },{ time: "11.00 am", activity: "Arrival of the bride and groom" },
-    { time: "12.00 pm", activity: "Photo session" },
-    { time: "3.00 pm", activity: "End of ceremony" }
+    { time: "06.00 pm", activity: "Guest arrival & welcome photo" },
+    { time: "07.00 Pm", activity: "Newlyweds' Entrance" },
+    { time: "07.15 pm", activity: "Grace Dinner served" },
+    { time: "08.00 am", activity: "Cake Cutting Ceremony" },
+    { time: "08.10 pm", activity: "Speeches & Toasts" },
+    { time: "08.30 am", activity: "Moment-Capturing Sessions" },
+    { time: "09.00 pm", activity: "Open Dance Floor" },
+    { time: "10.00 pm", activity: "Final Blessing & Send-Off" }
   ],
   prayer: `“Therefore what God has joined together, let no one separate.”<br>— Matthew 19:6`,
   photos: [
-    { src: "images/1.jpg", alt: "Fiqrie & Allen 1" },
-    { src: "images/2.jpg", alt: "Fiqrie & Allen 2" },
-    { src: "images/3.jpg", alt: "Fiqrie & Allen 3" }
+    { src: "images/1.jpg", alt: "Glow & Allen 1" },
+    { src: "images/2.jpg", alt: "Glow & Allen 2" },
+    { src: "images/3.jpg", alt: "Glow & Allen 3" }
   ],
   photoCaption: "Allen ❤️ Glow",
   cover: {
@@ -52,3 +53,4 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
