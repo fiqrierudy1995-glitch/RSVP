@@ -386,7 +386,7 @@ body {
   font-weight: 300;
   font-style: italic;
   color: #2d2b25;
-  margin: 0 0 6px;
+  margin: 0 0 0px;
   font-family: "Roboto Mono";
 }
 
@@ -1673,6 +1673,7 @@ h2#countdowntitle {
   font-weight: 300;
   line-height: 1.5;
 }
+
 
 
 
