@@ -564,7 +564,7 @@ h2 {
   box-sizing: border-box;
    /* Add this: */
   flex: 1 1 auto; /* allow children to grow/shrink */
-  height: 400px;  /* important for scrollable children */
+  height: 350px;  /* important for scrollable children */
   margin-bottom: 80px;
   margin-top: 20px;
 }
