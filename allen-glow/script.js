@@ -320,7 +320,7 @@ rsvpBtn?.addEventListener("click", (e) => {
   popupRSVP.style.display = "flex";
 });
 
-// Close popup when clicking outside the form
+// Close popup when clicking outside
 popupRSVP?.addEventListener("click", (e) => {
   if (e.target === popupRSVP) {
     popupRSVP.style.display = "none";
@@ -328,7 +328,7 @@ popupRSVP?.addEventListener("click", (e) => {
   }
 });
 
-// RSVP options
+// RSVP choices
 hadirBtn?.addEventListener("click", () => {
   rsvpChoice = "Hadir";
   rsvpForm.style.display = "block";
@@ -345,7 +345,7 @@ tidakhadirBtn?.addEventListener("click", () => {
   document.querySelector(".rsvppopup")?.classList.add("expanded");
 });
 
-// Cancel buttons
+// Cancel
 batalBtn?.addEventListener("click", (e) => {
   e.preventDefault();
   rsvpForm.reset();
@@ -360,7 +360,7 @@ batalBtntidak?.addEventListener("click", (e) => {
   resetRSVP();
 });
 
-// Form submission
+// Submit handler
 async function submitRSVP(form, url, rsvpChoice) {
   const btn = form.querySelector("button[type='submit']");
   messageDiv.style.display = "block";
@@ -384,7 +384,7 @@ async function submitRSVP(form, url, rsvpChoice) {
       messageDiv.textContent =
         rsvpChoice === "Hadir"
           ? "Thank you for your lovely wish! 💌"
-          : "Thank you! We understand you won’t be able to join us on our special day. 💌";
+          : "Thank you! We understand you won’t be able to join us. 💌";
       messageDiv.style.backgroundColor = "#fdfdfdff";
       messageDiv.style.color = "#000";
 
@@ -408,30 +408,66 @@ async function submitRSVP(form, url, rsvpChoice) {
   }
 }
 
-/* ============================
-   ✅ SUBMISSION HANDLERS
-=============================*/
+/* ============================================
+   ✅ FORM SUBMIT VALIDATION
+============================================ */
 
-// --- HADIR FORM (with validation) ---
+// --- HADIR FORM ---
 rsvpForm?.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // ⛔ VALIDATION FOR jumlahKehadiran
+  const nama = document.getElementById("nama_hadir");
+  const ucapan = document.getElementById("ucapan_hadir");
   const jumlah = document.getElementById("jumlahKehadiran");
+
+  // Validate name
+  if (nama.value.trim() === "") {
+    alert("Please enter your name.");
+    nama.focus();
+    return;
+  }
+
+  // Validate wishes
+  if (ucapan.value.trim() === "") {
+    alert("Please enter your wishes.");
+    ucapan.focus();
+    return;
+  }
+
+  // Validate number of guests
   if (jumlah.value === "") {
     alert("Please choose the number of guests.");
     jumlah.focus();
-    return; // stop submission
+    return;
   }
 
   submitRSVP(rsvpForm, scriptURL, "Hadir");
 });
 
-// --- TIDAK HADIR FORM (no validation needed) ---
+// --- TIDAK HADIR FORM ---
 rsvpFormtidak?.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  const namaT = document.getElementById("nama_tidak");
+  const ucapanT = document.getElementById("ucapan_tidak");
+
+  // Validate name
+  if (namaT.value.trim() === "") {
+    alert("Please enter your name.");
+    namaT.focus();
+    return;
+  }
+
+  // Validate wishes
+  if (ucapanT.value.trim() === "") {
+    alert("Please enter your wishes.");
+    ucapanT.focus();
+    return;
+  }
+
   submitRSVP(rsvpFormtidak, scriptURL, "Tidak Hadir");
 });
+
 
 
 // ==========================
@@ -461,6 +497,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   styleSwitcher && applyStyle(styleSwitcher.value);
   // Load wishes (auto-refresh after curtain opens)
 });
+
 
 
 
