@@ -207,7 +207,6 @@ h2 {
   background-size: cover; /* make sure image fits */
   background-repeat: no-repeat;
   background-position: top center;
-    background-attachment: fixed; /* <-- key line */
 }
 /* SCROLLABLE CONTAINER */
 .scroll-container {
