@@ -385,9 +385,9 @@ async function submitRSVP(form, url, rsvpChoice) {
         rsvpChoice === "Hadir"
           ? "Thank you for your lovely wish! 💌"
           : "Thank you! We understand you won’t be able to join us on our special day. 💌";
-      messageDiv.style.backgroundColor =
-        rsvpChoice === "Hadir" ? "#fdfdfdff" : "#fdfdfdff";
-      messageDiv.style.color = rsvpChoice === "Hadir" ? "#000" : "#363636";
+      messageDiv.style.backgroundColor = "#fdfdfdff";
+      messageDiv.style.color = "#000";
+
       form.reset();
 
       setTimeout(() => {
@@ -408,15 +408,31 @@ async function submitRSVP(form, url, rsvpChoice) {
   }
 }
 
+/* ============================
+   ✅ SUBMISSION HANDLERS
+=============================*/
+
+// --- HADIR FORM (with validation) ---
 rsvpForm?.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  // ⛔ VALIDATION FOR jumlahKehadiran
+  const jumlah = document.getElementById("jumlahKehadiran");
+  if (jumlah.value === "") {
+    alert("Please choose the number of guests.");
+    jumlah.focus();
+    return; // stop submission
+  }
+
   submitRSVP(rsvpForm, scriptURL, "Hadir");
 });
 
+// --- TIDAK HADIR FORM (no validation needed) ---
 rsvpFormtidak?.addEventListener("submit", (e) => {
   e.preventDefault();
   submitRSVP(rsvpFormtidak, scriptURL, "Tidak Hadir");
 });
+
 
 // ==========================
 // === Load Wishes / Ucapan ===
@@ -445,6 +461,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   styleSwitcher && applyStyle(styleSwitcher.value);
   // Load wishes (auto-refresh after curtain opens)
 });
+
 
 
 
