@@ -189,9 +189,15 @@ h2 {
   height: 844px;
   margin: 0 auto;
   position: relative;
+  border-radius: 0px;
+  box-shadow: 0px 0px black;
   overflow: hidden;
+  background-image: url("images/bg.png");
+  background-size: contain; /* make sure image fits */
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed; /* <-- key line */
 }
-
 /* Scrollable Container */
 .scroll-container {
   width: 100%;
