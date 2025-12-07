@@ -2,8 +2,8 @@
 
 const weddingDetails = {
   couple: {
-    groom: "Allen",
-    bride: "Glow"
+    groom: "Allen Yibit",
+    bride: "Glorianah Jacob
   },
   parents: {
     groomParents: "JACOB & RUSINAH",
@@ -53,6 +53,7 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
 
 
 
