@@ -3,7 +3,7 @@
 const weddingDetails = {
   couple: {
     groom: "Allen Yibit",
-    bride: "Glorianah Jacob
+    bride: "Glorianah Jacob"
   },
   parents: {
     groomParents: "JACOB & RUSINAH",
@@ -53,6 +53,7 @@ of our beloved son and daughter.`,
     loop: true
   }
 };
+
 
 
 
