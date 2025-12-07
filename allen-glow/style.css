@@ -1681,6 +1681,39 @@ h2#countdowntitle {
   line-height: 1.5;
 }
 
+/* ===== PRINT / PDF MODE ===== */
+@media print {
+
+  /* Force full content to show */
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Stop fixed / animated sections */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Make sure background images & colors appear */
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Prevent ugly page breaks */
+  section, div {
+    page-break-inside: avoid;
+  }
+
+  /* If you have sections with fixed height */
+  .section, .container, .wrapper {
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+}
 
 
 
